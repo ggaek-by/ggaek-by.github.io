@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Галерея</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" media="all" href="style/css/prettyPhoto.css" />
+<link rel="stylesheet" media="all" href="style/type/folks.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/quicksand.js"></script>
+<script type="text/javascript" src="style/js/portfolio.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+</head>
+<body>
+<div id="container"> 
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper"> 
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.html" style="font-size:30px;color: #626262;
+    font-family: georgia;" >От истоков к будущему</a></div>
+        <!-- Logo --> 
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html">Настоящее</a>
+                
+              </li>
+             
+              <li><a href="portfolio-1.html"  class="selected">Галерея</a>
+                
+              </li>
+              <li><a href="services.html">История</a></li>
+              <li><a href="http://ggaek.by">Вернуться</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu --> 
+      </div>
+      <!-- End Header --> 
+    </div>
+  </div>
+  <!-- End Header Wrapper --> 
+ 
+  
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <div id="portfolio"> 
+      <!-- Begin Portfolio Navigation -->
+      <ul class="gallerynav">
+        <li class="selected-1"><a href="#" data-value="all">Всё<span></span></a></li>
+        <li><a href="#" data-value="prep">Преподаватели<span></span></a></li>
+        <li><a href="#" data-value="dir">Директора<span></span></a></li>
+      </ul>
+      <!-- End Portfolio Navigation --> 
+      
+      <!-- Begin Portfolio Elements -->
+      <ul id="gallery" class="grid">
+        
+        <!-- Begin Image 1 -->
+        <li data-id="id-1" class="prep"> <a href="style/images/art/portfolio1.jpg" rel="prettyPhoto[gallery]"> <img src="style/images/art/portfolio1-th.jpg" alt="" /></a> </li>
+        <!-- End Image 1 -->
+        
+        <li data-id="id-2" class="dir"> <a href="style/images/art/portfolio2.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio2-th.jpg" alt="" /></a> </li>
+        <li data-id="id-3" class="prep"> <a href="http://vimeo.com/4887811" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio3-th.jpg" alt="" /></a> </li>
+        <li data-id="id-4" class="dir"> <a href="style/images/art/portfolio4.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio4-th.jpg" alt="" /></a> </li>
+
+      </ul>
+      <!-- End Portfolio Elements --> 
+      
+    </div>
+  </div>
+  
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+</div>
+
+<!-- Begin Footer -->
+<div id="footer-wrapper">
+  <div id="footer">
+    <div id="footer-content"> 
+      
+     <!-- Begin Copyright -->
+      <div id="copyright">
+        <p><a href="http://ggaek.by">Гомельский Государственный Аграрно Экономический Колледж</a></p>
+      </div>
+      <!-- End Copyright --> 
+      
+    </div>
+  </div>
+</div>
+
+<!-- End Footer --> 
+<script type="text/javascript">
+$(document).ready(function(){
+			$("#gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square',autoplay_slideshow: false});
+			
+			$("ul.grid img").hide()
+			$("ul.grid img").each(function(i) {
+			  $(this).delay(i * 200).fadeIn();
+			});
+			
+});
+</script>
+</body>
+</html>

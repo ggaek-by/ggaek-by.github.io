@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Музей | ГГАЭК</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" media="all" href="style/type/folks.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript">
+$(function() {
+			if ($('#sliderholder-cycle').length) {
+			// timeouts per slide (in seconds) 
+			var timeouts = [150,390,25]; 
+			function calculateTimeout(currElement, nextElement, opts, isForward) { 
+			    var index = opts.currSlide; 
+			    return timeouts[index] * 1000;
+			}
+			jQuery('#sliderholder-cycle').cycle({
+				fx: 'fade',
+				pager: '.slidernav',
+				prev:    '.sliderprev',
+        		next:    '.slidernext',
+				speed: 1000,
+				timeoutFn: calculateTimeout,
+				pagerEvent: 'click',
+    			pauseOnPagerHover: true,
+    			cleartype: 1
+});
+			jQuery('#sliderholder-cycle').css("display", "block");
+			jQuery('.slidernav').css("display", "block");
+			
+			}
+}); 
+</script>
+</head>
+<body>
+<div id="container"> 
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper"> 
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.html" style="font-size:30px;color: #626262;
+    font-family: georgia;" >От истоков к будущему</a></div>
+        <!-- Logo --> 
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html" class="selected">Настоящее</a>
+                
+              </li>
+                
+              </li>
+              <li><a href="portfolio-1.html">Галерея</a>
+              </li>
+              <li><a href="services.html">История</a></li>
+              <li><a href="http://ggaek.by">Вернуться</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Menu --> 
+      </div>
+      <!-- End Header --> 
+    </div>
+  </div>
+  <!-- End Header Wrapper --> 
+  
+  
+  <!-- Begin Slider -->
+  <div id="cycle-wrapper">
+   
+    <div id="sliderholder-cycle"> 
+      <img src="style/images/main-1.jpg" width="960" height="380" />
+      <img src="style/images/main-2.jpg" width="960" height="380" />
+        <!--
+      <div>
+        <iframe src="http://player.vimeo.com/video/4890208?title=0&amp;byline=0&amp;portrait=0" width="960" height="380" frameborder="0"></iframe>
+      </div>
+      -->
+    
+       </div>
+    <ul class="slidernav">
+    </ul>
+    <div class="sliderdir"> <a href="#"><span class="sliderprev">Предыдущий</span></a> <a href="#"><span class="slidernext">Следующий</span></a> </div>
+  </div>
+  <!-- End Slider --> 
+  
+  <!-- Begin Wrapper -->
+  <div id="wrapper"> 
+    
+    <!-- Begin Intro -->
+    <div class="intro">
+      <h1>Добро пожаловать в наш виртуальный музей! </h1>
+    </div>
+    <!-- End Intro --> 
+    
+    <!-- Begin About -->
+    <div id="about">
+      <div style="margin-left:14%" class="one-fourth"> <a href="portfolio-1.html"><img src="style/images/sub-3.png" style="width: 120px;
+    position: relative;
+    left: 27px; " alt="" /></a>
+        <h4>Галерея</h4>
+        <p>Фотоистория нашего колледжа.</p>
+      </div>
+      <div class="one-fourth"> <a href="services.html"><img src="style/images/sub-2.png"  style=" width: 120px;
+    position: relative;
+    left: 35px;" alt="" /></a>
+        <h4>История</h4>
+        <p>Путь нашего учбного заведения до колледжа.</p>
+      </div>
+      <div class="one-fourth last"> <a href="http://ggaek.by"><img src="style/images/sub-1.png" style="width: 133px;
+    position: relative;
+    left: 20px" alt="" /></a>
+        <h4>Наш сайт</h4>
+        <p>Посетите наш официальный сайт, чтобы узнать информацию о поступлении.</p>
+      </div>
+    </div>
+    <!-- End About --> 
+    
+  </div>
+  
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+</div>
+
+<!-- Begin Footer -->
+<div id="footer-wrapper">
+  <div id="footer">
+    <div id="footer-content"> 
+      
+      <!-- Begin Copyright -->
+      <div id="copyright">
+        <p><a href="http://ggaek.by">Гомельский Государственный Аграрно Экономический Колледж</a></p>
+      </div>
+      <!-- End Copyright --> 
+    
+      
+    </div>
+  </div>
+</div>
+<!-- End Footer -->
+</body>
+</html>
